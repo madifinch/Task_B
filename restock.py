@@ -25,4 +25,6 @@ The function will also update the inventory_records (For restocking) for a  give
             restock = 2000 - available_items
         available_items = 2000
 
+        inventory_records.append([current_day, sold, restock, available_items])
+
     return available_items
