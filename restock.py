@@ -21,5 +21,8 @@ The function will also update the inventory_records (For restocking) for a  give
         sold = 0 
         if current_day == 0:
             restock = 2000
-            
+        else: 
+            restock = 2000 - available_items
+        available_items = 2000
+
     return available_items
